@@ -1,0 +1,87 @@
+/* Body and Aura Background */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to bottom, #4c1d95, #6b21a8);
+  overflow: hidden;
+  transition: background 1s ease;
+  color: white;
+}
+
+/* Card Styling */
+.card {
+  background: rgba(255,255,255,0.1);
+  backdrop-filter: blur(12px);
+  padding: 40px 30px;
+  border-radius: 30px;
+  text-align: center;
+  box-shadow: 0 0 30px rgba(255,255,255,0.2);
+  max-width: 500px;
+  width: 90%;
+}
+
+/* Portrait */
+.portrait {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 4px solid white;
+  box-shadow: 0 0 40px rgba(255,255,255,0.6);
+  transition: transform 0.5s, box-shadow 0.5s;
+  margin-bottom: 20px;
+}
+
+.portrait:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 60px rgba(255,255,255,0.8);
+}
+
+/* Title */
+h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+/* Quote */
+#quote {
+  font-style: italic;
+  font-size: 1.1rem;
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+
+/* Button */
+button {
+  padding: 12px 30px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 50px;
+  background-color: #7c3aed;
+  color: white;
+  cursor: pointer;
+  box-shadow: 0 0 20px rgba(124,58,237,0.5);
+  transition: background 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
+button:hover {
+  background-color: #9333ea;
+  transform: scale(1.05);
+  box-shadow: 0 0 30px rgba(147,51,234,0.7);
+}
+
+/* Floating Lotus Animation */
+.lotus {
+  position: absolute;
+  animation: floatUp 12s linear infinite;
+  opacity: 0.6;
+}
+
+@keyframes floatUp {
+  from { transform: translateY(100vh) scale(0.8); opacity: 0.8; }
+  to { transform: translateY(-20vh) scale(1.3); opacity: 0; }
+}
